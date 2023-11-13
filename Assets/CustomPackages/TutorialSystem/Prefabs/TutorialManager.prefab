@@ -1,0 +1,350 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &108177919364472878
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108177919364472876}
+  - component: {fileID: 108177919364472877}
+  m_Layer: 0
+  m_Name: TutorialManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &108177919364472876
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108177919364472878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &108177919364472877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108177919364472878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8721ebe898245858bdf8ae1d25e31fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _tutorialName: Gameplay
+  _clickBlocker: {fileID: 0}
+  _tutorialPopup: {fileID: 0}
+  _tutorialFader: {fileID: 0}
+  _timeEventChannel: {fileID: 11400000, guid: 2520bd453d9ca814ca623a2c8a6018b5, type: 2}
+  _tutorialStartCondition: 1
+  _startTutorialEventChannel: {fileID: 11400000, guid: 993bf87e337ee3843b83108612b04a98,
+    type: 2}
+  _startTutorialButton: {fileID: 0}
+  _requireOtherTutorialCompleted: 0
+  _requiredTutorialName: 
+  _onTutorialStart:
+    m_PersistentCalls:
+      m_Calls: []
+  _onTutorialEnd:
+    m_PersistentCalls:
+      m_Calls: []
+  _tutorialEntries:
+  - _text: Welcome to the Bounce Glide competition!
+    _tutorialPosition: {x: 0, y: 0}
+    _pauseTime: 1
+    _useFadeBackground: 1
+    _onTutorialEntryStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    _onTutorialEntryEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    _appearCondition: 1
+    _delayDuration: 2
+    _showTutorialEventChannel: {fileID: 0}
+    _showDelay: 0
+    _hideCondition: 0
+    _hideTutorialButton: {fileID: 0}
+    _hideTutorialEventChannel: {fileID: 0}
+    _hideDelay: 0
+  - _text: Reaching the TARGET and scoring POINTS is the name of the game. Let me
+      show you the basics...
+    _tutorialPosition: {x: 0, y: 0}
+    _pauseTime: 1
+    _useFadeBackground: 1
+    _onTutorialEntryStart:
+      m_PersistentCalls:
+        m_Calls: []
+    _onTutorialEntryEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    _appearCondition: 0
+    _delayDuration: 2
+    _showTutorialEventChannel: {fileID: 0}
+    _showDelay: 0
+    _hideCondition: 0
+    _hideTutorialButton: {fileID: 0}
+    _hideTutorialEventChannel: {fileID: 0}
+    _hideDelay: 0
+  - _text: Move your playing using the on-screen JOYSTICK.
+    _tutorialPosition: {x: 0, y: 0}
+    _pauseTime: 1
+    _useFadeBackground: 1
+    _onTutorialEntryStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TutorialSystem.Scripts.Runtime.CanvasSortingManager,
+            Assembly-CSharp
+          m_MethodName: OverrideSorting
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 12
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    _onTutorialEntryEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    _appearCondition: 2
+    _delayDuration: 2
+    _showTutorialEventChannel: {fileID: 11400000, guid: a5f713b72375baa41a21800b61e5a2a6,
+      type: 2}
+    _showDelay: 0
+    _hideCondition: 3
+    _hideTutorialButton: {fileID: 0}
+    _hideTutorialEventChannel: {fileID: 11400000, guid: dcf45ac011776ed4aa0c2af21e185046,
+      type: 2}
+    _hideDelay: 0
+  - _text: 
+    _tutorialPosition: {x: 1000, y: 0}
+    _pauseTime: 0
+    _useFadeBackground: 0
+    _onTutorialEntryStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    _onTutorialEntryEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    _appearCondition: 2
+    _delayDuration: 3
+    _showTutorialEventChannel: {fileID: 11400000, guid: 0f648248af17f344e99a4ec6cbbcb941,
+      type: 2}
+    _showDelay: 0
+    _hideCondition: 4
+    _hideTutorialButton: {fileID: 0}
+    _hideTutorialEventChannel: {fileID: 11400000, guid: 0f648248af17f344e99a4ec6cbbcb941,
+      type: 2}
+    _hideDelay: 1
+  - _text: Once in the air, TAP the TRANSFORM button to open your GLIDER.
+    _tutorialPosition: {x: 0, y: 0}
+    _pauseTime: 1
+    _useFadeBackground: 0
+    _onTutorialEntryStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TutorialSystem.Scripts.Runtime.CanvasSortingManager,
+            Assembly-CSharp
+          m_MethodName: OverrideSorting
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 12
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TutorialSystem.Scripts.Runtime.MatchUIObjectPosition,
+            Assembly-CSharp
+          m_MethodName: FindUIObjectWithName
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: PlayerUI_Canvas/SafeArea/GameplayUI/TransformButton/TransformIcon
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    _onTutorialEntryEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    _appearCondition: 1
+    _delayDuration: 2
+    _showTutorialEventChannel: {fileID: 11400000, guid: 0f648248af17f344e99a4ec6cbbcb941,
+      type: 2}
+    _showDelay: 3
+    _hideCondition: 3
+    _hideTutorialButton: {fileID: 0}
+    _hideTutorialEventChannel: {fileID: 11400000, guid: 7176d2d8de3bea546ac852fbe4eb5b76,
+      type: 2}
+    _hideDelay: 0
+  - _text: Continue to use the JOYSTICK to control your glide and aim for the target!
+    _tutorialPosition: {x: 0, y: 0}
+    _pauseTime: 1
+    _useFadeBackground: 1
+    _onTutorialEntryStart:
+      m_PersistentCalls:
+        m_Calls: []
+    _onTutorialEntryEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    _appearCondition: 1
+    _delayDuration: 2
+    _showTutorialEventChannel: {fileID: 11400000, guid: 0f648248af17f344e99a4ec6cbbcb941,
+      type: 2}
+    _showDelay: 1
+    _hideCondition: 0
+    _hideTutorialButton: {fileID: 0}
+    _hideTutorialEventChannel: {fileID: 11400000, guid: 7176d2d8de3bea546ac852fbe4eb5b76,
+      type: 2}
+    _hideDelay: 0
+  - _text: When you are near the target press the TRANSFORM button again to return
+      to a Ball and drop to the target.
+    _tutorialPosition: {x: 0, y: 0}
+    _pauseTime: 1
+    _useFadeBackground: 0
+    _onTutorialEntryStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: TutorialSystem.Scripts.Runtime.CanvasSortingManager,
+            Assembly-CSharp
+          m_MethodName: StopOverride
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    _onTutorialEntryEnd:
+      m_PersistentCalls:
+        m_Calls: []
+    _appearCondition: 1
+    _delayDuration: 4
+    _showTutorialEventChannel: {fileID: 11400000, guid: 0f648248af17f344e99a4ec6cbbcb941,
+      type: 2}
+    _showDelay: 1
+    _hideCondition: 1
+    _hideTutorialButton: {fileID: 0}
+    _hideTutorialEventChannel: {fileID: 11400000, guid: 7176d2d8de3bea546ac852fbe4eb5b76,
+      type: 2}
+    _hideDelay: 0
